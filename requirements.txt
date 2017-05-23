@@ -5,8 +5,8 @@ Mako==1.0.6
 python-editor==1.0.3
 alembic==0.8.6
 Flask-Migrate==2.0.0
-si==1.10.0
-ordereddict=1.1
+six==1.10.0
+ordereddict==1.1
 pytz
 aniso8601==1.2.0
 Flask-RESTful==0.3.5
