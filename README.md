@@ -20,3 +20,7 @@ npm run dev
 # build for production with minification
 npm run build
 ```
+
+## Run task server
+```bash
+celery -A celery_tasks.celery_ins worker --loglevel=info
