@@ -5,6 +5,13 @@
 ```bash
 # install python packages
 pip install -r requirements.txt
+# init db
+python manager.py db init
+python manager.py db migrate
+python manager.py db upgrade
+# update db model
+python manager.py db migrate
+python manager.py db upgrade
 # run server
 python manager.py runserver -h 127.0.0.1 -p 5000
 ```

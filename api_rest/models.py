@@ -33,3 +33,17 @@ class BaseModel(object):
         for key, value in kwargs.iteritems():
             json_data[key] = value
         return json_data
+
+
+class Students(BaseModel, db.Model):
+    """
+    desc:   学生表模型
+
+    """
+    name = db.Column(db.String(20))
+
+    def __init__(self, name):
+        self.name = name
+
+    def to_dict(self):
+        return self._to_dict(name=self.name)
