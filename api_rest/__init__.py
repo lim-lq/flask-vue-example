@@ -4,16 +4,16 @@ desc:   initial project
 
 """
 
-import models
-import views
+from api_rest import models
+from api_rest import views
 
 from flask import g
 from flask_cors import CORS
 from flask_restful import Resource
 
-from applications import app, api, db
-from http_responses import HTTP_200_OK
-from utils import register_route
+from api_rest.applications import app, api, db
+from api_rest.http_responses import HTTP_200_OK
+from api_rest.utils import register_route
 
 # solve cros site problem
 CORS(app)

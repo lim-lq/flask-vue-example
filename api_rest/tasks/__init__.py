@@ -1,1 +1,1 @@
-from my_tasks import add_together
+from api_rest.tasks.my_tasks import add_together
