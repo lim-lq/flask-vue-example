@@ -1,0 +1,21 @@
+权限控制模块，适用于flask
+
+Usage:
+    from permission import ItemPermission, Needs
+
+    VIEWNEEDS = Needs("view", u"查看权限")
+                       权限名  权限说明
+    MANAGENEEDS = Needs("manage", u"管理权限")
+
+    #模块的管理权限
+    user_manager = ItemPermission("user", u"用户管理", MANAGENEEDS)
+                                  模块名   模块说明
+    user_manager是一条完整的权限
+
+    #模块的查看权限
+    user_view = ItemPermission("user", u"用户管理", VIEWNEEDS)
+
+    @app.route("/xxx")
+    @user_view.require #或者@user_manager.require
+    def xxx():
+        pass

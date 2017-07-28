@@ -9,8 +9,9 @@ date:   2017-05-23
 from flask import Flask
 from flask_restful import Api
 from flask_sqlalchemy import SQLAlchemy
-
 from celery import Celery, platforms
+
+from api_rest.utils.redis_wrapper import Redis
 
 platforms.C_FORCE_ROOT = True
 
@@ -49,3 +50,5 @@ celery_ins = make_celery(app)
 api = Api(app)
 
 db = SQLAlchemy(app)
+
+redis_cache = Redis(app.config["REDIS_URL"])

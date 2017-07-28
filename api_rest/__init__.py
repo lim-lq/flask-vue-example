@@ -11,7 +11,7 @@ from flask import g
 from flask_cors import CORS
 from flask_restful import Resource
 
-from api_rest.applications import app, api, db
+from api_rest.applications import app, api, db, redis_cache
 from api_rest.http_responses import HTTP_200_OK
 from api_rest.utils import register_route
 
@@ -22,6 +22,7 @@ CORS(app)
 @app.before_request
 def before_request():
     g.db = db
+    g.cache = redis_cache
 
 
 class Index(Resource):

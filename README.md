@@ -12,6 +12,10 @@ python manager.py db upgrade
 # update db model
 python manager.py db migrate
 python manager.py db upgrade
+# initial privileges
+python manager.py init_privilege
+# create superuser
+python manager.py create_superuser
 # run server
 python manager.py runserver -h 127.0.0.1 -p 5000
 ```
