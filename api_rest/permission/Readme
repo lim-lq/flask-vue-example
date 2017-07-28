@@ -1,3 +1,5 @@
+参考flask principal改写的轻量级权限控制模块
+
 权限控制模块，适用于flask
 
 Usage:
