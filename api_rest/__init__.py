@@ -11,9 +11,12 @@ from flask import g
 from flask_cors import CORS
 from flask_restful import Resource
 
-from api_rest.applications import app, api, db, redis_cache
+from api_rest.applications import app, api, db
 from api_rest.http_responses import HTTP_200_OK
 from api_rest.utils import register_route
+from api_rest.utils.redis_wrapper import Redis
+
+redis_cache = Redis(app.config["REDIS_URL"])
 
 # solve cros site problem
 CORS(app)

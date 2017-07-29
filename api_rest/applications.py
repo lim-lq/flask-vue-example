@@ -11,8 +11,6 @@ from flask_restful import Api
 from flask_sqlalchemy import SQLAlchemy
 from celery import Celery, platforms
 
-from api_rest.utils.redis_wrapper import Redis
-
 platforms.C_FORCE_ROOT = True
 
 
@@ -51,4 +49,3 @@ api = Api(app)
 
 db = SQLAlchemy(app)
 
-redis_cache = Redis(app.config["REDIS_URL"])
