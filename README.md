@@ -1,5 +1,8 @@
 # flask-vue-example
-> The web project structure
+> This a web development example.
+
+This project includes api service, front-end and task service using
+flask, vuejs, celery framework.
 
 ## Build Setup api
 ```bash
