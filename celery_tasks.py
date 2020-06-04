@@ -6,6 +6,5 @@ date:   2016-11-21
 
 """
 
-# from nn_publish_platform.application import celery_ins
 from api_rest.tasks import *
 from api_rest.applications import celery_ins
