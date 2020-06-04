@@ -1,6 +1,6 @@
 # coding=utf-8
 """
-desc:   app管理脚本
+desc:   run server script for test
 author: levi-lq
 date:   2017-05-23
 
