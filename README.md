@@ -4,8 +4,6 @@
 This project includes api service, front-end and task service using
 flask, vuejs, celery framework.
 
-> 表名：dcos_cmdb.t_cmdb_server_basic_info
-
 ## Build Setup api
 ```bash
 # install python packages
