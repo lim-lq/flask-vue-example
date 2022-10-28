@@ -12,4 +12,4 @@ aniso8601==1.2.0
 Flask-RESTful==0.3.5
 Flask-SQLAlchemy==2.1
 Flask-Cors==3.0.2
-celery==3.1.24
+celery==5.2.2
